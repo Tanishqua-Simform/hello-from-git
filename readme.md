@@ -13,8 +13,9 @@ This course has delved deep inside the realms of Git and GitHub
 ### 1. Fundamentals of Git
 
 - Git - Version Control System
+    - Centralized and Distributed
 - Git Workflow
-- Environment Setup and GitHub account
+- Environment Setup and GitHub account created.
 - Branch
     - Create Branch and switch to it
     ```commmand - git branch <branch-name>; git switch <new-branch>```
@@ -35,3 +36,28 @@ This course has delved deep inside the realms of Git and GitHub
         Alternatively, do ```Sync Fork``` on the GitHub GUI.
 - Solved Merge Conflicts @mergeConflict file.
 - Making Markdown Readme.md
+- GitHub Issues
+    - Issue is registered. Fork the repository, clone, solve and push.
+    - Create Pull Request linked to the issue (Use GitHub Documentation.)
+    - PR is merged and issue is solved.
+- Webhook
+    - Jenkins may perform API calls every minute to fetch updated repo from GitHub.
+    - This will bombard GitHub server and get only stagnant data back.
+    - To overcome this, use webhook.
+    - GitHub makes POST call to jenkins(etc.) when repo changed.
+- Branching Strategy
+    - Trunk Based - Only small features are added periodically to main branch. 
+        - Usecase: DevOps, as they require quick feature update. Mature Team.
+    - Git Flow - Released based workflow. Rather than small changes, it makes big releases once/month or so.
+        - Usecase: New team. New to Git.
+        - Requires: Release manager.
+
+## LMS Git Course
+
+Read the theory from the LMS portal.
+
+- Git - Basic Concepts
+    - Branching is lightweight compared to CVCS because instead of copying whole code, it simply makes pointer to the new Branch.
+    - Git Terminology - Blob, Tree, Commit, Branch, Tag, Clone, Pull, Push, HEAD.
+- Environment Setup ```command - git config --global <changes>```
+- Life Cycle and General Workflow - [Git and Github Crash Course](https://www.youtube.com/watch?v=SWYqp7iY_Tc&t=639s&ab_channel=TraversyMedia)
